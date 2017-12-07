@@ -1,5 +1,6 @@
 <%= line_chart [{name: "Open", data: @open_alpha_data}, {name: "Close", data: @close_alpha_data}, {name: "High", data: @high_alpha_data}, {name: "Low", data: @low_alpha_data}], min: @minimum_y, max: @maximum_y, title: 'Intraday (1min) prices for MSFT' %>
-
+<section class="report">
+  <div class="container">
 <h4>Report :</h4>
 <p><b> Graph collected from data <%= link_to "External link", "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=MSFT&interval=1min&apikey=REQPDVQUZP4HXB13", target: "_blank", rel: "nofollow"%></b></p>
 <h4><i> "1. Information": "Intraday (1min) prices and volumes",<br>
@@ -10,3 +11,5 @@
         "6. Time Zone": "US/Eastern"</i></h4>
 
 <p><i>Click on each button to check the graph individually.</i></p>
+</div>
+</section>
